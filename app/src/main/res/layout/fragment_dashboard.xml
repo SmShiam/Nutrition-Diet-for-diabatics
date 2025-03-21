@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="older.Dashboard_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_weight="2.5"
+            android:contentDescription="@string/home_icon"
+            android:src="@drawable/ic_home" />
+
+
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:contentDescription="@string/notification_icon"
+            android:src="@drawable/ic_notification" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:contentDescription="@string/profile_icon"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button1"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nikosh"
+                        android:text="Today"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/layout2"
+                        app:layout_constraintTop_toTopOf="@id/layout2" />
+
+                    <ImageView
+                        android:id="@+id/meal"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/meal"
+                        app:layout_constraintBottom_toBottomOf="@id/layout2"
+                        app:layout_constraintStart_toStartOf="@id/layout2" />
+
+
+                    <TextView
+                        android:id="@+id/input"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:hint="12"
+                        android:textAlignment="center"
+                        android:textSize="35sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/enter"
+                        app:layout_constraintEnd_toEndOf="@+id/enter"
+                        app:layout_constraintHorizontal_bias="0.53"
+                        app:layout_constraintStart_toStartOf="@+id/enter"
+                        app:layout_constraintTop_toTopOf="@+id/enter"
+                        app:layout_constraintVertical_bias="0.39999998" />
+
+                    <ImageView
+                        android:id="@+id/enter"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/add_glucose"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/activity"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/activity"
+                        app:layout_constraintBottom_toBottomOf="@id/layout2"
+                        app:layout_constraintEnd_toEndOf="@id/layout2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/medicine"
+                    android:layout_width="0dp"
+                    android:layout_height="185dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:src="@drawable/medicine" />
+
+                <ImageView
+                    android:id="@+id/bp"
+                    android:layout_width="0dp"
+                    android:layout_height="185dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:src="@drawable/bp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:id="@+id/bmi"
+                    android:layout_width="0dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/bmi" />
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="0dp"
+                    android:layout_height="185dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:fontFamily="@font/nikosh"
+                    android:paddingBottom="30dp"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="100sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

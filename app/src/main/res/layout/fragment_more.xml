@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:background="#C7C0E0"
+    android:orientation="vertical"
+    tools:context=".More_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/back_white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="1dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/profile_icon"
+            android:src="@drawable/ic_profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/nikosh"
+                android:hint="Your Name"
+                android:textSize="35sp"
+
+                />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nikosh"
+                android:hint="01*********"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/nikosh"
+                android:text="@string/edit"
+                android:textColor="#D80731"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_white"
+        android:fontFamily="@font/nikosh"
+        android:padding="20dp"
+        android:text="Setting"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_white"
+        android:fontFamily="@font/nikosh"
+        android:padding="20dp"
+        android:text="Disclaimer"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+
+    <TextView
+        android:id="@+id/p_p1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_white"
+        android:fontFamily="@font/nikosh"
+        android:padding="20dp"
+        android:text="Privacy Policy"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <TextView
+        android:id="@+id/re_ac3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_white"
+        android:fontFamily="@font/nikosh"
+        android:padding="20dp"
+        android:text="Water Remiender"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+
+</LinearLayout>

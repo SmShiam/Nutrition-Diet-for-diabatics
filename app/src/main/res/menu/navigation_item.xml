@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:fontFamily="@font/nikosh"
+        android:icon="@drawable/baseline_dashboard"
+        android:title="Dashboard" />
+
+
+    <item
+        android:id="@+id/nav_plans"
+        android:title="Plans"
+        android:fontFamily="@font/nikosh"
+        android:icon="@drawable/baseline_plans"/>
+
+    <item
+        android:id="@+id/nav_dairy"
+        android:title="Dairy"
+        android:fontFamily="@font/nikosh"
+        android:icon="@drawable/baseline_dairy"/>
+
+    <item
+        android:id="@+id/nav_more"
+        android:title="more"
+        android:fontFamily="@font/nikosh"
+        android:icon="@drawable/baseline_more"/>
+</menu>

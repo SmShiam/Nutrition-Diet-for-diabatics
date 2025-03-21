@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:background="#C9C2E2"
+    android:orientation="vertical"
+    tools:context=".older.Bmi_Calculator">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_white"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight=".15"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/homeIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nikosh"
+            android:padding="8dp"
+            android:text="BMI"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/back_white"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/nikosh"
+                android:letterSpacing=".05"
+                android:text=" Height"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edtHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_area"
+                    android:hint="0     ft"
+                    android:letterSpacing=".2"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <EditText
+                    android:id="@+id/edtHeightIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_area"
+                    android:hint="0     in"
+                    android:letterSpacing=".2"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/htSpinner"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/nikosh"
+                android:letterSpacing=".05"
+                android:text=" Weight"
+                android:textColor="@color/black"
+                android:textSize="12pt" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edtWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_area"
+                    android:hint="0  Kg"
+                    android:letterSpacing=".2"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/wtSpinner"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/bmi_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/button1"
+                    android:letterSpacing=".05"
+                    android:padding="15dp"
+                    android:text="Calculate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/nikosh"
+                    android:letterSpacing=".05"
+                    android:text=" Result"
+                    android:textColor="@color/black"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:id="@+id/result_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/nikosh"
+                    android:letterSpacing=".05"
+                    android:paddingBottom="8dp"
+                    android:text=" Your BMI is 0.00."
+                    android:textColor="@color/black"
+                    android:textSize="8pt" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".older.P_P">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nikosh"
+            android:text="Disclaimer"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/text_margin"
+            android:text="Our nutrition and diet system offers personalized meal plans, promotes balanced macronutrients, and enables real-time tracking, all of which support diabetes management. By educating patients on healthy eating and empowering them to make informed choices, it enhances blood sugar control and overall health. Future enhancements could further improve personalization and effectiveness through AI insights."
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
